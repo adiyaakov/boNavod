@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">בוא נעבוד</string>
+    <string name="app_reciver1">בא לך לעשות כסף הסופש? עבודות חדשות לימים הקרובים</string>
+    <string name="app_reciver2">מצאנו לך הכנסה נוספת לסופש! כנס לראות</string>
+    <string name="app_reciver3">מצאנו לך עבודה לסופש! כנס לבדוק</string>
+    <string name="empty_list">אנו מצטערים אבל אין עבודות באיזור זה כרגע, אנא נסה שוב</string>
+    <string name="lay_text"></string>
+    <string name="check_box">אשר תקנון לשימוש באפליקציה</string>
+    <string name="empty_list2">לא פרסמת עבודות באזור זה</string>
+    <string name="header_my_post">העבודות שפרסמתי באזור </string>
+    <string name="heafer_full_post">כל התוצאות עבור אזור </string>
+
+    <string name="date_btn">תאריך ושעה תחילת עבודה</string>
+
+    <string name="info">האפליקציה נוצרה על מנת לתת את המענה הפשוט והמהיר לכל אדם המחפש עבודה, או עובד באופן חד פעמי. האפליקציה מאפשרת למחפשי עובדים/עבודה חד פעמית להגיע למבוקש בצורה היעילה והמהירה ביותר. על ידי מיון לפי אזור. האפליקציה פונה לכל אדם אשר צריך עובד לעבודה חד פעמית או מנגד אנשים שאין להם עבודה קבועה ומחפשים הכנסה צדדית ומהירה.</string>
+</resources>

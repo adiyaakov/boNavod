@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circular_button"
+        android:text="או"
+        android:textColor="@color/mainSKY"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relativeRight"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:onClick="openQueryList"
+                android:src="@drawable/wheel"
+                android:layout_below="@+id/mypost"
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:layout_marginRight="5dp"
+                android:id="@+id/mypost"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/mainSKY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="העבודות שפרסמתי"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:textColor="#23d2f8"
+                android:textSize="20dp"
+                android:id="@+id/buttonJobLooking"
+                android:layout_height="wrap_content"
+                android:text="מחפש עבודה"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLeft"
+            android:background="#23d2f8"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:id="@+id/buttonWorkerLooking"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="מחפש עובד"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/temp_inclode"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+</RelativeLayout>

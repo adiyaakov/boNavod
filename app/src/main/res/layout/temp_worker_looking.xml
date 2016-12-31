@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/mainSKY"
+    tools:context="com.marvelapp.myapplication.activity.WorkerLookingActivity">
+
+
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="מחפש עובד/ת לימים הקרובים?"/>
+
+
+
+
+
+
+    <ScrollView
+        android:layout_weight="8"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp">
+
+
+        <include layout="@layout/input_list_worker_looking"></include>
+
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_marginTop="7dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:text="פרסם!"
+        android:id="@+id/workerLookingPostBtn"
+        android:textStyle="bold"
+        android:textColor="@color/mainSKY"
+        android:layout_height="0dp"
+        android:background="@drawable/post_button"/>
+
+        <include layout="@layout/temp_inclode"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </include>
+
+</LinearLayout>

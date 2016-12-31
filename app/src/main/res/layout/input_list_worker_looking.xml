@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/workerLookingArea"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tranpragment_shape"
+        android:text="בחר אזור"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/workerLookingCategory"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="בחר תחום"
+        android:textSize="20dp"
+        android:maxLength="23"
+        android:maxLines="1"
+        android:backgroundTint="#ffffff"
+        android:nextFocusForward="@+id/workerLookingPart"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:maxLength="23"
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:hint="בחר תפקיד"
+        android:textSize="20dp"
+        android:id="@+id/workerLookingPart"
+        android:textColor="@color/white"
+        />
+
+    <ToggleButton
+        android:id="@+id/workerLookingExperience"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tranpragment_shape"
+        android:text="בחר אזור"
+        android:textOn="דורש ניסיון"
+        android:textOff="ללא ניסיון"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:maxLength="3"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:nextFocusForward="@+id/workerLookingContactName"
+        android:hint="מספר שעות עבודה"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/workerLookingNumOfHours"
+        />
+
+
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:inputType="text"
+        android:hint="שם איש קשר"
+        android:nextFocusForward="@+id/workerLookingContactNumber"
+        android:maxLength="17"
+        android:textSize="20dp"
+        android:id="@+id/workerLookingContactName"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:inputType="phone"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:maxLength="11"
+        android:nextFocusForward="@+id/workerLookingCheckBox"
+        android:hint="טלפון לפרטים"
+        android:textSize="20dp"
+        android:id="@+id/workerLookingContactNumber"
+        android:textColor="@color/white" />
+
+    <Button
+
+        android:id="@+id/workerLookingDate"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/tranpragment_shape"
+        android:text="@string/date_btn"
+        android:textSize="15dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:textColorHint="@color/white"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/workerLookingAddress"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:maxLength="20"
+        android:hint="מיקום מדויק"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="@android:color/white"
+        android:id="@+id/workerLookingCheckBox"
+        android:layout_marginLeft="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+         />
+    <TextView
+        android:layout_alignBaseline="@id/workerLookingCheckBox"
+        android:id="@+id/checkBoxtext"
+
+        android:layout_alignTop="@id/workerLookingCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@color/white"
+        android:layout_toLeftOf="@id/workerLookingCheckBox"
+        android:text="אשר תנאי שימוש"
+
+        />
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

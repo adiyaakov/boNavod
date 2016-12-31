@@ -1,0 +1,81 @@
+<android.support.v7.widget.CardView app:cardCornerRadius="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+
+    <TextView
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/mainSKY"
+        android:id="@+id/timeTv"
+        android:text="שעה"/>
+
+    <com.marvelapp.myapplication.date_and_time.TimePicker
+
+        android:layout_below="@id/timeTv"
+        android:id="@+id/timePicerDialog"
+        android:layout_centerHorizontal="true"
+        android:layoutDirection="ltr"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    </com.marvelapp.myapplication.date_and_time.TimePicker>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/timePicerDialog"
+        android:layout_width="wrap_content"
+        android:textColor="@color/mainSKY"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTv"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="25dp"
+        android:text="תאריך"/>
+
+    <com.marvelapp.myapplication.date_and_time.DatePicker
+        android:layoutDirection="ltr"
+        android:gravity="center"
+        android:layout_below="@id/dateTv"
+        android:id="@+id/datePickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    </com.marvelapp.myapplication.date_and_time.DatePicker>
+
+        <Button
+
+            android:layout_below="@id/datePickerDialog"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/post_button"
+            android:text="אישור"
+            android:layout_margin="5dp"
+            android:id="@+id/postBtnDialog"
+            android:textStyle="bold"
+
+            android:textColor="@color/mainSKY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

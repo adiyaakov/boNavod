@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="20dp">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/header"
+        android:textSize="20dp"
+        android:textColor="@color/mainSKY"
+        android:text="עבודה חד פעמית בקליק"/>
+
+    <TextView
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/header_info"
+        android:textColor="@color/mainSKY"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="חייל סטודנט, או סתם מחפש הכנסה נוספת? מצא עבודה חד פעמית ליום הפנוי שלך"/>
+
+    <Button
+
+        android:layout_below="@id/header_info"
+        android:id="@+id/buttonChooseArea"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape"
+        android:text="בחר אזור"
+        android:textSize="20dp"
+        android:textColor="@color/mainSKY" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/buttonChooseArea"
+        android:id="@+id/buttonStartSearch"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/search_button"
+        android:text="חפש"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <include layout="@layout/temp_inclode"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+</RelativeLayout>
